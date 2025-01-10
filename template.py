@@ -24,7 +24,12 @@ file_list = [
     f"src/{project_name}/pipelines/prediction_pipeline.py",  
     f"src/{project_name}/utils/__init__.py",  
     f"src/{project_name}/utils/common.py",  
-    f"src/{project_name}/logging/__init__.py",   
+    f"src/{project_name}/logging/__init__.py",
+    f"src/{project_name}/logging/logger.py",
+    f"src/{project_name}/exception/__init__.py",
+    f"src/{project_name}/exception/exception.py",
+    "app.py",
+    "main.py",
     
     # Project requirements and Dockerfile
     "requirements.txt", 
