@@ -28,6 +28,11 @@ file_list = [
     f"src/{project_name}/logging/logger.py",
     f"src/{project_name}/exception/__init__.py",
     f"src/{project_name}/exception/exception.py",
+    f"src/{project_name}/data/raw_data.csv",
+    f"src/{project_name}/data/train_data.csv",
+    f"src/{project_name}/data/test_data.csv",
+
+    
     "app.py",
     "main.py",
     

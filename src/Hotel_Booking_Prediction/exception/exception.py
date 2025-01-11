@@ -1,5 +1,5 @@
 import sys
-from src.Hotel_Booking_Prediction.logging import logging  
+from src.Hotel_Booking_Prediction.logging import logger 
 
 def error_message_detail(error, error_detail: sys):
     """

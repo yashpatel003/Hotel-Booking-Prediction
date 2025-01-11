@@ -20,3 +20,5 @@ logging.basicConfig(
     format="[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",  #  log format
     level=logging.INFO,  # Set the logging level to INFO
 )
+
+logger = logging.getLogger(__name__)
