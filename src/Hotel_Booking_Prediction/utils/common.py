@@ -5,6 +5,7 @@ from src.Hotel_Booking_Prediction.logging.logger import logger
 import pandas as pd 
 import pymysql
 from dotenv import load_dotenv
+import pickle
 
 # Load environment variables from .env file
 load_dotenv()
@@ -54,7 +55,33 @@ def read_sql_data():
         return df
 
     except Exception as ex:
-        # Log the exception and raise a custom exception
-        logger.error(f"Error occurred: {ex}")
+        # Raise any exceptions if encountered during the process as a CustomException
         raise CustomException(ex, sys)
+    
+def save_object(file_path, obj):
+    """
+    Saves a Python object to a file in binary format using pickle.
+
+    Args:
+        file_path (str): The full file path where the object will be saved.
+        obj (object): The Python object to be saved.
+
+    Raises:
+        CustomException: If any exception occurs during the saving process, it is wrapped and raised as a CustomException.
+    """
+    try:
+        # Extract the directory path from the provided file path
+        dir_path = os.path.dirname(file_path)
+
+        # Create the directory if it doesn't already exist
+        os.makedirs(dir_path, exist_ok=True)
+
+        # Open the file in write-binary mode and save the object using pickle
+        with open(file_path, "wb") as file_obj:
+            pickle.dump(obj, file_obj)
+
+    except Exception as e:
+        # Raise any exceptions if encountered during the process as a CustomException
+        raise CustomException(e, sys)
+
 
