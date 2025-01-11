@@ -25,7 +25,7 @@ class DataIngestion:
         2. Saves the raw data to a CSV file.
         3. Splits the data into training and testing sets.
         4. Saves the training and testing sets to CSV files.
-        5. Logs the progress and returns the paths to the saved files.
+        5. Returns the paths to the saved files.
         """
         try:
             ## Step 1: Reading the data from MySQL

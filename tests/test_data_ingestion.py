@@ -13,13 +13,7 @@ def data_ingestion():
     """
     data_ingestion = DataIngestion()
     yield data_ingestion
-    # # Clean up: Remove created files after the test
-    # if os.path.exists(data_ingestion.raw_data_path):
-    #     os.remove(data_ingestion.raw_data_path)
-    # if os.path.exists(data_ingestion.train_data_path):
-    #     os.remove(data_ingestion.train_data_path)
-    # if os.path.exists(data_ingestion.test_data_path):
-    #     os.remove(data_ingestion.test_data_path)
+
    
 def test_data_ingestion(data_ingestion):
     """
