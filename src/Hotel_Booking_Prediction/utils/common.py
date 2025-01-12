@@ -1,11 +1,8 @@
-import os 
-import sys 
+import os , sys , pickle , pymysql
 from src.Hotel_Booking_Prediction.exception.exception import CustomException
 from src.Hotel_Booking_Prediction.logging.logger import logger
 import pandas as pd 
-import pymysql
 from dotenv import load_dotenv
-import pickle
 
 # Load environment variables from .env file
 load_dotenv()
@@ -23,8 +20,6 @@ def read_sql_data():
     Returns:
         pd.DataFrame: DataFrame containing the data from the SQL query.
     
-    Raises:
-        CustomException: If any error occurs during the database connection or data retrieval.
     """
     logger.info("Reading SQL database started")
     
@@ -65,9 +60,6 @@ def save_object(file_path, obj):
     Args:
         file_path (str): The full file path where the object will be saved.
         obj (object): The Python object to be saved.
-
-    Raises:
-        CustomException: If any exception occurs during the saving process, it is wrapped and raised as a CustomException.
     """
     try:
         # Extract the directory path from the provided file path
@@ -81,7 +73,5 @@ def save_object(file_path, obj):
             pickle.dump(obj, file_obj)
 
     except Exception as e:
-        # Raise any exceptions if encountered during the process as a CustomException
         raise CustomException(e, sys)
-
 

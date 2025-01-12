@@ -13,9 +13,6 @@ from src.Hotel_Booking_Prediction.utils.common import save_object
 
 class DataTransformation:
     def __init__(self):
-        """
-        Constructor for the DataTransformation class.
-        """
         self.preprocessor_obj_file_path = os.path.join("src", "Hotel_Booking_Prediction", "data", "preprocessor.pkl")
 
     def get_data_transformer_object(self):
@@ -150,3 +147,4 @@ class DataTransformation:
 
         except Exception as ex:
             raise CustomException(ex,sys)
+

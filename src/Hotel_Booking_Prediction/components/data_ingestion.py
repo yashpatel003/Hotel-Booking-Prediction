@@ -53,5 +53,4 @@ class DataIngestion:
             )
 
         except Exception as e:
-            ## Handle any exceptions that occur during the process  
-            raise CustomException(e, sys)  # Raise a custom exception with the error details
+            raise CustomException(e, sys) 

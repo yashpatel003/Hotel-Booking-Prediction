@@ -34,7 +34,6 @@ file_list = [
 
     
     "app.py",
-    "main.py",
     
     # Project requirements and Dockerfile
     "requirements.txt", 
