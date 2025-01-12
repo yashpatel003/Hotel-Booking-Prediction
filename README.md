@@ -34,7 +34,7 @@ This project follows a modular approach where each component of the pipeline is 
 We welcome contributions from the community to improve the project! Here’s how you can get involved:
 
 1. **Fork the repository** and clone it to your local machine:
-   git clone https://github.com/your-username/hotel-booking-cancellation-prediction.git
+   git clone https://github.com/yashpatel003/Hotel-Booking-Prediction.git
 
 2. **Create a new branch**: 
     git checkout -b feature-branch
