@@ -67,9 +67,8 @@ class DataTransformation:
             logger.info("Preprocessing pipeline created successfully.")
             return preprocessor
 
-        except Exception as e:
-            logger.error("Error occurred while creating the preprocessing pipeline.")
-            raise CustomException(f"Error in {sys._getframe().f_code.co_name}: {str(e)}", sys)
+        except Exception as ex:
+            raise CustomException(ex,sys)
 
     def initiate_data_transformation(self, train_path, test_path):
         """

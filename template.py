@@ -46,13 +46,7 @@ file_list = [
     
     # Git ignore file to exclude unnecessary files from version control
     ".gitignore",
-    
-    # Unit tests directory
-    "tests/__init__.py", 
-    "tests/test_data_ingestion.py",  
-    "tests/test_data_transformation.py", 
-    "tests/test_model_training.py",  
-    "tests/test_model_evaluation.py",  
+     
 ]
 
 # Loop through the file list and create directories/files
