@@ -51,7 +51,7 @@ class ModelEvaluator:
                 y_test_pred = model.predict(X_test)
 
                 # Calculate classification metrics: accuracy, precision, recall, and f1_score
-                accuracy = accuracy_score(y_test_pred, y_test)
+                accuracy = accuracy_score(y_test, y_test_pred)
                 precision = precision_score(y_test, y_test_pred)
                 recall = recall_score(y_test, y_test_pred)
                 f1 = f1_score(y_test, y_test_pred)
