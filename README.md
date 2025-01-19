@@ -38,28 +38,33 @@ Follow these steps to set up the project locally:
     - Open your terminal or command prompt.
     - Navigate to the directory where you want to install the project.
     - Run the following command to clone the GitHub repository:
-
+        ```bash
         `git clone https://github.com/yashpatel003/Hotel-Booking-Prediction`
 
 2. **Navigate to the Project Directory**
     - Move into the project folder:
+        ```bash
         `cd Hotel-Booking-Prediction`
 
 3. **Create a Virtual Environment (Optional but Recommended)**
     - It is recommended to create a virtual environment to manage dependencies:
+        ```bash
         `python -m venv hotel_env`
 
 4. **Activate the Virtual Environment**
     - Activate the environment using the following command:
         1. On Windows:
+            ```bash
             `hotel_env\Scripts\activate`
         
         2. On macOS/Linux:
+            ```bash
             `source hotel_env/bin/activate`
       
 
 5. **Install Dependencies**
     - Install all required Python libraries and packages using the requirements.txt file:
+        ```bash
         `pip install -r requirements.txt`
 
 6. **Set Up MySQL Database**
@@ -70,6 +75,7 @@ Follow these steps to set up the project locally:
 
 7. **Run the Project**
     - Start the project by running the  command.
+        ```bash
         `python app.py`
 
 ## Contributing
@@ -79,15 +85,19 @@ Contributions are what makes the open-source community such an amazing place to 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
 1. **Fork the repository** and clone it to your local machine:
+    ```bash
    `git clone https://github.com/yashpatel003/Hotel-Booking-Prediction.git`
 
 2. **Create a new branch**: 
+    ```bash
     `git checkout -b feature-branch`
 
 3. **Make your changes**: Update code, add tests, or fix issues a  commit your changes: 
+    ```bash
     `git commit -m "Added a new feature"`
 
 4. **Push to your fork**: 
+    ```bash
     `git push origin feature-branch`
 
 5.  **Open a Pull Request with a description of your changes**.
