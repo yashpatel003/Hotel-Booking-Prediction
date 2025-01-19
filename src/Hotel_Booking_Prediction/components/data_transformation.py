@@ -27,17 +27,17 @@ class DataTransformation:
             # Define columns to be processed
             # Numerical columns for scaling
             numerical_columns = [
-                "lead_time", 'deposit_given', 'total_customer',
+                "lead_time", 'deposit_given', 'total_customer',"required_car_parking_spaces",
                 'previous_cancellations', 'is_repeated_guest', "days_in_waiting_list",
                 'previous_bookings_not_canceled', "total_of_special_requests", "adr",
-                "total_stay", "booking_changes", "required_car_parking_spaces", "is_family"
+                "total_stay", "booking_changes", "is_family"
             ]
-
+        
             # Categorical columns for encoding
             categorical_columns = [
-                "hotel", "distribution_channel", "reserved_room_type", "customer_type", "meal", "market_segment"
+                "hotel", "distribution_channel", "reserved_room_type", "customer_type", "meal","market_segment"
             ]
-
+           
             # Numerical pipeline: Handles missing values and scales features
             num_pipeline = Pipeline(
                 steps=[

@@ -29,25 +29,69 @@ This project follows a modular approach where each component of the pipeline is 
 4. **Model Evaluation**: Measures model performance and provides insights.
 ---
 
+
+### Installation Steps
+
+Follow these steps to set up the project locally:
+
+1. **Clone the Repository**
+    - Open your terminal or command prompt.
+    - Navigate to the directory where you want to install the project.
+    - Run the following command to clone the GitHub repository:
+
+        `git clone https://github.com/yashpatel003/Hotel-Booking-Prediction`
+
+2. **Navigate to the Project Directory**
+    - Move into the project folder:
+        `cd Hotel-Booking-Prediction`
+
+3. **Create a Virtual Environment (Optional but Recommended)**
+    - It is recommended to create a virtual environment to manage dependencies:
+        `python -m venv hotel_env`
+
+4. **Activate the Virtual Environment**
+    - Activate the environment using the following command:
+        1. On Windows:
+            `hotel_env\Scripts\activate`
+        
+        2. On macOS/Linux:
+            `source hotel_env/bin/activate`
+      
+
+5. **Install Dependencies**
+    - Install all required Python libraries and packages using the requirements.txt file:
+        `pip install -r requirements.txt`
+
+6. **Set Up MySQL Database**
+    - Before running the pipeline, ensure that your MySQL database is set up with the hotel booking data.
+    - Create a database in MySQL (e.g., hotel_booking).
+    - Import the hotel booking dataset into a table (e.g., bookings).
+    - Update the database credentials in the data_ingestion.py file.
+
+7. **Run the Project**
+    - Start the project by running the  command.
+        `python app.py`
+
 ## Contributing
 
-We welcome contributions from the community to improve the project! Here’s how you can get involved:
+Contributions are what makes the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
 1. **Fork the repository** and clone it to your local machine:
-   git clone https://github.com/yashpatel003/Hotel-Booking-Prediction.git
+   `git clone https://github.com/yashpatel003/Hotel-Booking-Prediction.git`
 
 2. **Create a new branch**: 
-    git checkout -b feature-branch
+    `git checkout -b feature-branch`
 
 3. **Make your changes**: Update code, add tests, or fix issues a  commit your changes: 
-    git commit -m "Added a new feature"
+    `git commit -m "Added a new feature"`
 
 4. **Push to your fork**: 
-    git push origin feature-branch
+    `git push origin feature-branch`
 
 5.  **Open a Pull Request with a description of your changes**.
 
 ## Reporting Issues
 
 If you encounter any issues or bugs, please open an issue via the GitHub repository and provide detailed information on the problem you're facing. This helps the community troubleshoot and improve the system.
-
